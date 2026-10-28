@@ -1,0 +1,40 @@
+<resources>
+    <string-array name="student_tab_labels">
+        <item>Trang chủ</item>
+        <item>Bảng điểm</item>
+        <item>Học phần</item>
+        <item>Thông báo</item>
+        <item>Tài khoản</item>
+    </string-array>
+    <string-array name="student_tab_titles">
+        <item>Cổng Sinh Viên</item>
+        <item>Bảng Điểm Học Tập</item>
+        <item>Khóa Học &amp; Lịch Học</item>
+        <item>Thông Báo Học Vụ</item>
+        <item>Hồ Sơ Sinh Viên</item>
+    </string-array>
+    <string-array name="admin_tab_labels">
+        <item>Tổng quan</item>
+        <item>Sinh viên</item>
+        <item>Môn học</item>
+        <item>Nhập điểm</item>
+        <item>Lịch sử</item>
+    </string-array>
+    <string-array name="admin_tab_titles">
+        <item>Tổng Quan Đào Tạo</item>
+        <item>Quản Lý Sinh Viên</item>
+        <item>Quản Lý Môn Học</item>
+        <item>Nhập Điểm Học Phần</item>
+        <item>Lịch Sử Thay Đổi Điểm</item>
+    </string-array>
+    <string-array name="grade_sorts">
+        <item>Mới nhất</item>
+        <item>Điểm cao nhất</item>
+        <item>Tên môn A–Z</item>
+    </string-array>
+    <string-array name="genders">
+        <item>Nam</item>
+        <item>Nữ</item>
+        <item>Khác</item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingTop="8dp" android:paddingBottom="8dp">
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_mssv"/>
+        <EditText android:id="@+id/f_code" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_ho_va_ten"/>
+        <EditText android:id="@+id/f_name" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="textPersonName"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_email"/>
+        <EditText android:id="@+id/f_email" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="textEmailAddress"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_lop"/>
+        <EditText android:id="@+id/f_class" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_khoa"/>
+        <EditText android:id="@+id/f_faculty" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_nganh"/>
+        <EditText android:id="@+id/f_major" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_khoa_tuyen_sinh"/>
+        <EditText android:id="@+id/f_cohort" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_ngay_sinh_dd_mm_yyyy"/>
+        <EditText android:id="@+id/f_dob" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_gioi_tinh"/>
+        <include android:id="@+id/sel_gender" layout="@layout/view_select" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_so_dien_thoai"/>
+        <EditText android:id="@+id/f_phone" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="phone"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_student_dia_chi"/>
+        <EditText android:id="@+id/f_address" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+    </LinearLayout>
+</ScrollView>

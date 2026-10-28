@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="14dp" android:paddingBottom="24dp">
+        <TextView style="@style/Txt.Heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_courses_danh_sach_hoc_phan"/>
+        <TextView style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="12dp" android:text="@string/screen_student_courses_ke_hoach_hoc_tap_thoi"/>
+        <include android:id="@+id/seg_tabs" layout="@layout/view_segment2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+        <TextView android:id="@+id/tv_empty" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_courses_chua_co_hoc_phan_nao" android:visibility="gone"/>
+        <LinearLayout android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

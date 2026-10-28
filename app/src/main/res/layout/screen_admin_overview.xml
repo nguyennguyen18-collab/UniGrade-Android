@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="14dp" android:paddingBottom="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:background="@drawable/bg_hero_admin" android:orientation="vertical"
+            android:paddingLeft="18dp" android:paddingRight="18dp" android:paddingTop="16dp" android:paddingBottom="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tag_hero" android:letterSpacing="0.1"
+                        android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingTop="3dp" android:paddingBottom="3dp"
+                        android:text="@string/screen_admin_overview_can_bo_quan_ly_dao" android:textColor="@color/tag_text" android:textSize="9sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/ov_name" style="@style/Txt.Heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="2dp" android:textColor="@color/white" android:textSize="19sp"/>
+                    <TextView android:id="@+id/ov_position" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white_80"/>
+                </LinearLayout>
+                <TextView android:id="@+id/ov_avatar" style="@style/Avatar" android:layout_width="54dp" android:layout_height="54dp" android:textSize="18sp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="14dp" android:layout_marginBottom="12dp" android:background="@color/white_20"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:id="@+id/ov_semester" style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/white"/>
+                <LinearLayout android:id="@+id/btn_enter_grades" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_btn_primary" android:clickable="true"
+                    android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="14dp" android:paddingRight="14dp" android:paddingTop="9dp" android:paddingBottom="9dp">
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="6dp" android:src="@drawable/ic_doc" android:tint="@color/white"/>
+                    <TextView style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_admin_overview_nhap_diem" android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="horizontal">
+            <LinearLayout style="@style/Card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="6dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_overview_sinh_vien"/>
+                    <ImageView style="@style/IconBadge" android:layout_width="32dp" android:layout_height="32dp" android:padding="8dp" android:src="@drawable/ic_people" android:tint="@color/primary" android:backgroundTint="@color/primary_soft"/>
+                </LinearLayout>
+                <TextView android:id="@+id/ov_students" style="@style/Txt.Value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <TextView android:id="@+id/ov_students_sub" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="@color/green" android:textSize="11sp"/>
+            </LinearLayout>
+            <LinearLayout style="@style/Card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="6dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_overview_mon_hoc"/>
+                    <ImageView style="@style/IconBadge" android:layout_width="32dp" android:layout_height="32dp" android:padding="8dp" android:src="@drawable/ic_book" android:tint="@color/purple" android:backgroundTint="@color/purple_soft"/>
+                </LinearLayout>
+                <TextView android:id="@+id/ov_subjects" style="@style/Txt.Value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <TextView android:id="@+id/ov_subjects_sub" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="@color/muted" android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="horizontal">
+            <LinearLayout style="@style/Card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="6dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_overview_lop_hoc_phan"/>
+                    <ImageView style="@style/IconBadge" android:layout_width="32dp" android:layout_height="32dp" android:padding="8dp" android:src="@drawable/ic_layers" android:tint="@color/amber" android:backgroundTint="@color/amber_soft"/>
+                </LinearLayout>
+                <TextView android:id="@+id/ov_classes" style="@style/Txt.Value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <TextView android:id="@+id/ov_classes_sub" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="@color/muted" android:textSize="11sp"/>
+            </LinearLayout>
+            <LinearLayout style="@style/Card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="6dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_overview_ban_ghi_diem"/>
+                    <ImageView style="@style/IconBadge" android:layout_width="32dp" android:layout_height="32dp" android:padding="8dp" android:src="@drawable/ic_doc" android:tint="@color/green" android:backgroundTint="@color/green_soft"/>
+                </LinearLayout>
+                <TextView android:id="@+id/ov_grades" style="@style/Txt.Value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <TextView android:id="@+id/ov_grades_sub" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="@color/green" android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView style="@style/Txt.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_admin_overview_pho_diem_toan_khoa"/>
+                    <TextView style="@style/Txt.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_admin_overview_ty_le_xep_loai_hoc"/>
+                </LinearLayout>
+                <TextView style="@style/Pill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/primary_soft" android:text="@string/screen_admin_overview_chuan_dhqg" android:textColor="@color/primary"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/dist_bar" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="14dp" android:layout_marginBottom="12dp" android:background="@color/track" android:orientation="horizontal">
+                <View android:id="@+id/band_0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0" android:background="@color/band_a"/>
+                <View android:id="@+id/band_1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0" android:background="@color/band_b"/>
+                <View android:id="@+id/band_2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0" android:background="@color/band_c"/>
+                <View android:id="@+id/band_3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0" android:background="@color/band_d"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginRight="8dp">
+                <View android:layout_width="9dp" android:layout_height="9dp" android:layout_marginRight="6dp" android:background="@drawable/bg_dot" android:backgroundTint="@color/band_a"/>
+                <TextView style="@style/Txt.Small" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_overview_gioi_xuat_sac_8_5"/>
+                <TextView android:id="@+id/pct_0" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginLeft="8dp">
+                <View android:layout_width="9dp" android:layout_height="9dp" android:layout_marginRight="6dp" android:background="@drawable/bg_dot" android:backgroundTint="@color/band_b"/>
+                <TextView style="@style/Txt.Small" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_overview_kha_7_0_8_4"/>
+                <TextView android:id="@+id/pct_1" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp"/>
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginRight="8dp">
+                <View android:layout_width="9dp" android:layout_height="9dp" android:layout_marginRight="6dp" android:background="@drawable/bg_dot" android:backgroundTint="@color/band_c"/>
+                <TextView style="@style/Txt.Small" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_overview_trung_binh_5_0_6"/>
+                <TextView android:id="@+id/pct_2" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginLeft="8dp">
+                <View android:layout_width="9dp" android:layout_height="9dp" android:layout_marginRight="6dp" android:background="@drawable/bg_dot" android:backgroundTint="@color/band_d"/>
+                <TextView style="@style/Txt.Small" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_overview_khong_dat_5_0"/>
+                <TextView android:id="@+id/pct_3" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp"/>
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

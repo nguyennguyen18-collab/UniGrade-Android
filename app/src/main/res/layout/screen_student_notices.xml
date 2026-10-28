@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="14dp" android:paddingBottom="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView style="@style/Txt.Heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_notices_thong_bao_hoc_vu"/>
+                <TextView style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_notices_cap_nhat_diem_so_lich"/>
+            </LinearLayout>
+            <TextView android:id="@+id/btn_read_all" style="@style/BtnOutline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/screen_student_notices_da_doc_tat_ca" android:textColor="@color/primary"/>
+        </LinearLayout>
+        <include android:id="@+id/seg_tabs" layout="@layout/view_segment2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+        <TextView android:id="@+id/tv_empty" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_notices_khong_co_thong_bao" android:visibility="gone"/>
+        <LinearLayout android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

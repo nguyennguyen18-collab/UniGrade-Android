@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="14dp" android:paddingBottom="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_hero_student" android:gravity="center_vertical" android:orientation="horizontal"
+            android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="18dp" android:paddingBottom="18dp">
+            <TextView android:id="@+id/home_avatar" style="@style/Avatar" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="14dp" android:textSize="20sp"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:id="@+id/home_cohort" style="@style/Txt.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white_80"/>
+                <TextView android:id="@+id/home_name" style="@style/Txt.Heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="20sp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView android:id="@+id/home_code" style="@style/Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/white_20" android:textColor="@color/white"/>
+                    <TextView android:id="@+id/home_major" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:textColor="@color/white_90"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="horizontal">
+        <LinearLayout style="@style/Card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="6dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_student_home_gpa_tich_luy"/>
+                <ImageView style="@style/IconBadge" android:layout_width="32dp" android:layout_height="32dp" android:padding="8dp" android:src="@drawable/ic_star" android:tint="@color/purple" android:backgroundTint="@color/purple_soft"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="bottom" android:orientation="horizontal">
+                <TextView android:id="@+id/tv_gpa" style="@style/Txt.Value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_gpa_unit" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tv_gpa_sub" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/green" android:textSize="11sp"/>
+        </LinearLayout>
+        <LinearLayout style="@style/Card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="6dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_student_home_tin_chi_da_tich_luy"/>
+                <ImageView style="@style/IconBadge" android:layout_width="32dp" android:layout_height="32dp" android:padding="8dp" android:src="@drawable/ic_layers" android:tint="@color/primary" android:backgroundTint="@color/primary_soft"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="bottom" android:orientation="horizontal">
+                <TextView android:id="@+id/tv_credits" style="@style/Txt.Value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_credits_unit" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+            <ProgressBar android:id="@+id/pb_credits" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="6dp" android:indeterminate="false" android:max="100" android:minHeight="8dp" android:maxHeight="8dp" android:progressDrawable="@drawable/bg_progress"/>
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="horizontal">
+        <LinearLayout style="@style/Card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="6dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_student_home_gpa_ky_nay"/>
+                <ImageView style="@style/IconBadge" android:layout_width="32dp" android:layout_height="32dp" android:padding="8dp" android:src="@drawable/ic_trend" android:tint="@color/amber" android:backgroundTint="@color/amber_soft"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="bottom" android:orientation="horizontal">
+                <TextView android:id="@+id/tv_term_gpa" style="@style/Txt.Value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tv_term_label" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/muted" android:textSize="11sp"/>
+        </LinearLayout>
+        <LinearLayout style="@style/Card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="6dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView style="@style/Txt.Muted" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_student_home_mon_hoc_da_dat"/>
+                <ImageView style="@style/IconBadge" android:layout_width="32dp" android:layout_height="32dp" android:padding="8dp" android:src="@drawable/ic_check_circle" android:tint="@color/green" android:backgroundTint="@color/green_soft"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="bottom" android:orientation="horizontal">
+                <TextView android:id="@+id/tv_passed" style="@style/Txt.Value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tv_pass_rate" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/green" android:textSize="11sp"/>
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView style="@style/Txt.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_home_diem_moi_cap_nhat"/>
+                    <TextView style="@style/Txt.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_home_bang_diem_hoc_phan_vua"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tv_see_all" style="@style/Txt.Link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_home_tat_ca"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tv_recent_empty" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/screen_student_home_chua_co_du_lieu_diem" android:visibility="gone"/>
+            <LinearLayout android:id="@+id/recent_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

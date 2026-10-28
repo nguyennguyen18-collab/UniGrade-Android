@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_horizontal" android:orientation="vertical"
+        android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingTop="32dp" android:paddingBottom="24dp">
+
+        <TextView android:layout_width="88dp" android:layout_height="88dp" android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_logo_big" android:gravity="center" android:text="@string/activity_login_uef"
+            android:textColor="@color/brand_red" android:textSize="26sp" android:textStyle="bold" android:typeface="serif"/>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_login_unigrade"
+                android:textColor="@color/navy" android:textSize="26sp" android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="4dp"
+                android:background="@drawable/bg_badge_red" android:text="@string/activity_login_uef" android:textColor="@color/white" android:textSize="11sp" android:textStyle="bold"
+                android:paddingLeft="7dp" android:paddingRight="7dp" android:paddingTop="2dp" android:paddingBottom="2dp"/>
+        </LinearLayout>
+        <TextView style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:layout_marginBottom="2dp" android:gravity="center"
+            android:text="@string/activity_login_truong_dai_hoc_kinh_te" android:textColor="@color/school_blue" android:textSize="12sp"/>
+        <TextView style="@style/Txt.Small" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp" android:gravity="center" android:text="@string/activity_login_cong_quan_ly_diem_hoc"/>
+
+        <include android:id="@+id/seg_role" layout="@layout/view_segment2"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp"/>
+
+        <LinearLayout style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp" android:paddingTop="16dp" android:paddingBottom="16dp">
+            <TextView android:id="@+id/tv_code_label" style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_code" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" android:hint="@string/activity_login_nhap_ma_dang_nhap" android:inputType="text"
+                android:drawableStart="@drawable/ic_person" android:drawableTint="@color/faint" android:drawablePadding="10dp"
+                android:textStyle="bold" android:typeface="monospace"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView style="@style/Txt.Label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/activity_login_mat_khau_dang_nhap"/>
+                <TextView android:id="@+id/tv_forgot" style="@style/Txt.Link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_login_quen_mat_khau"/>
+            </LinearLayout>
+            <EditText android:id="@+id/et_password" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" android:hint="@string/activity_login_mat_khau" android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_lock" android:drawableTint="@color/faint" android:drawablePadding="10dp"/>
+            <CheckBox android:id="@+id/cb_remember" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" android:text="@string/activity_login_ghi_nho_phien_dang_nhap"/>
+            <LinearLayout android:id="@+id/btn_login" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center" android:orientation="horizontal" android:clickable="true" android:background="@drawable/bg_btn_primary"
+                android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="13dp" android:paddingBottom="13dp">
+                <TextView style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_login_dang_nhap_vao_he_thong" android:textColor="@color/white" android:textSize="15sp"/>
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="8dp" android:src="@drawable/ic_arrow" android:tint="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+            android:background="@drawable/bg_demo" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="8dp" android:src="@drawable/ic_bolt" android:tint="@color/primary"/>
+                <TextView style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_login_dang_nhap_nhanh_trai_nghiem" android:textColor="@color/school_blue"/>
+            </LinearLayout>
+            <TextView style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="10dp"
+                android:text="@string/activity_login_cham_mot_lan_de_kham"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:id="@+id/btn_demo_student" style="@style/BtnOutline" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginRight="6dp" android:text="@string/activity_login_sinh_vien_sv2024001" android:textColor="@color/primary"/>
+                <TextView android:id="@+id/btn_demo_admin" style="@style/BtnOutline" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginLeft="6dp" android:text="@string/activity_login_quan_tri_gv9901" android:textColor="@color/primary"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

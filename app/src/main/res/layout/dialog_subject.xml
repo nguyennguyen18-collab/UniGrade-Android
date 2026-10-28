@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingTop="8dp" android:paddingBottom="8dp">
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_ma_mon"/>
+        <EditText android:id="@+id/f_code" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_ten_mon_hoc"/>
+        <EditText android:id="@+id/f_name" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_so_tin_chi"/>
+        <EditText android:id="@+id/f_credits" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="number"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_mo_ta"/>
+        <EditText android:id="@+id/f_desc" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="textMultiLine" android:singleLine="false"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_khoa_phu_trach"/>
+        <EditText android:id="@+id/f_faculty" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_ky_goi_y_vd_hk3"/>
+        <EditText android:id="@+id/f_term" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="text"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="4dp" android:layout_marginLeft="0dp" android:orientation="vertical">
+                <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_chuyen_can"/>
+                <EditText android:id="@+id/f_wa" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="0dp" android:layout_marginLeft="4dp" android:orientation="vertical">
+                <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_bai_tap"/>
+                <EditText android:id="@+id/f_wb" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="number"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="4dp" android:layout_marginLeft="0dp" android:orientation="vertical">
+                <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_giua_ky"/>
+                <EditText android:id="@+id/f_wc" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="0dp" android:layout_marginLeft="4dp" android:orientation="vertical">
+                <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/dialog_subject_cuoi_ky"/>
+                <EditText android:id="@+id/f_wd" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:inputType="number"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

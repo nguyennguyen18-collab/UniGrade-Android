@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:id="@+id/g_code" style="@style/Chip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/g_credits" style="@style/Txt.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <TextView android:id="@+id/g_status" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/g_name" style="@style/Txt.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:textSize="16sp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_box_soft" android:orientation="horizontal"
+        android:paddingLeft="6dp" android:paddingRight="6dp" android:paddingTop="8dp" android:paddingBottom="8dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+                <TextView style="@style/Txt.Tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_grade_chuyen_can" android:textColor="@color/muted"/>
+                <TextView android:id="@+id/g_att" style="@style/Txt.Mono" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text" android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+                <TextView style="@style/Txt.Tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_grade_bai_tap" android:textColor="@color/muted"/>
+                <TextView android:id="@+id/g_ass" style="@style/Txt.Mono" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text" android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+                <TextView style="@style/Txt.Tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_grade_giua_ky" android:textColor="@color/muted"/>
+                <TextView android:id="@+id/g_mid" style="@style/Txt.Mono" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text" android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+                <TextView style="@style/Txt.Tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_grade_cuoi_ky" android:textColor="@color/muted"/>
+                <TextView android:id="@+id/g_fin" style="@style/Txt.Mono" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/primary" android:textSize="14sp"/>
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:id="@+id/g_sem" style="@style/Txt.Small" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:id="@+id/g_total" style="@style/Txt.Mono" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"/>
+        <TextView style="@style/Txt.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/item_grade_10"/>
+        <TextView android:id="@+id/g_letter" style="@style/Chip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

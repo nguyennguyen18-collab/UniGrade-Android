@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="14dp" android:paddingBottom="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <EditText android:id="@+id/et_search" style="@style/InputSearch" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="@string/screen_student_grades_tim_mon_hoc_hoac_ma" android:inputType="text"/>
+            <TextView android:id="@+id/btn_pdf" style="@style/BtnOutline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/screen_student_grades_xuat_pdf"/>
+        </LinearLayout>
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:scrollbars="none">
+            <LinearLayout android:id="@+id/chips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"/>
+        </HorizontalScrollView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="8dp" android:src="@drawable/ic_filter" android:tint="@color/muted"/>
+            <TextView android:id="@+id/tv_count" style="@style/Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:textSize="12sp"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <TextView android:id="@+id/tv_sort" style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:background="@drawable/bg_card_soft"
+            android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="12dp" android:paddingBottom="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_grades_tong_diem_da_chon" android:textColor="@color/primary" android:textSize="10sp"/>
+                <TextView android:id="@+id/tv_sum_credits" style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView style="@style/Txt.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:text="@string/screen_student_grades_diem_tb_he_4" android:textColor="@color/primary" android:textSize="10sp"/>
+                <TextView android:id="@+id/tv_sum_gpa" style="@style/Txt.Mono" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:textColor="@color/primary" android:textSize="24sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_empty" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_student_grades_khong_co_diem_phu_hop" android:visibility="gone"/>
+        <LinearLayout android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

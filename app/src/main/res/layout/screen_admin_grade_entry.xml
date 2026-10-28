@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="14dp" android:paddingBottom="24dp">
+        <TextView style="@style/Txt.Heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_admin_grade_entry_nhap_chinh_sua_diem"/>
+        <TextView style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="12dp" android:text="@string/screen_admin_grade_entry_tu_dong_tinh_diem_tong"/>
+        <TextView android:id="@+id/ge_empty" style="@style/Txt.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_admin_grade_entry_can_co_sinh_vien_va" android:visibility="gone"/>
+        <LinearLayout android:id="@+id/ge_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/screen_admin_grade_entry_chon_hoc_ky_dao_tao"/>
+                <include android:id="@+id/sel_semester" layout="@layout/view_select" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+                <TextView style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/screen_admin_grade_entry_chon_hoc_phan_mon_hoc"/>
+                <include android:id="@+id/sel_subject" layout="@layout/view_select" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:id="@+id/ge_pick_label" style="@style/Txt.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:scrollbars="none">
+                <LinearLayout android:id="@+id/chip_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"/>
+            </HorizontalScrollView>
+            <LinearLayout style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView android:id="@+id/ge_name" style="@style/Txt.Title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <TextView android:id="@+id/ge_code" style="@style/Txt.Mono" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="11sp"/>
+                </LinearLayout>
+                <TextView android:id="@+id/ge_subject" style="@style/Txt.Link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+                <TextView android:id="@+id/ge_status" style="@style/Txt.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <View style="@style/Divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="5dp" android:background="@drawable/bg_box_soft12" android:orientation="vertical"
+                    android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="8dp" android:paddingBottom="10dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView style="@style/Txt.Label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/item_grade_chuyen_can" android:textSize="11sp"/>
+                        <TextView android:id="@+id/ge_w0" style="@style/Txt.Tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <EditText android:id="@+id/ge_att" style="@style/Txt.Mono" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_field_focus" android:gravity="center" android:hint="@string/screen_admin_grade_entry_0_10" android:inputType="numberDecimal" android:padding="8dp"
+                        android:singleLine="true" android:textColorHint="@color/faint" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="5dp" android:background="@drawable/bg_box_soft12" android:orientation="vertical"
+                    android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="8dp" android:paddingBottom="10dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView style="@style/Txt.Label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_grade_entry_bai_tap_qt" android:textSize="11sp"/>
+                        <TextView android:id="@+id/ge_w1" style="@style/Txt.Tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <EditText android:id="@+id/ge_ass" style="@style/Txt.Mono" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_field_focus" android:gravity="center" android:hint="@string/screen_admin_grade_entry_0_10" android:inputType="numberDecimal" android:padding="8dp"
+                        android:singleLine="true" android:textColorHint="@color/faint" android:textSize="18sp"/>
+                </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="5dp" android:background="@drawable/bg_box_soft12" android:orientation="vertical"
+                    android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="8dp" android:paddingBottom="10dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView style="@style/Txt.Label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_grade_entry_thi_giua_ky" android:textSize="11sp"/>
+                        <TextView android:id="@+id/ge_w2" style="@style/Txt.Tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <EditText android:id="@+id/ge_mid" style="@style/Txt.Mono" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_field_focus" android:gravity="center" android:hint="@string/screen_admin_grade_entry_0_10" android:inputType="numberDecimal" android:padding="8dp"
+                        android:singleLine="true" android:textColorHint="@color/faint" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="5dp" android:background="@drawable/bg_box_soft12" android:orientation="vertical"
+                    android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="8dp" android:paddingBottom="10dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView style="@style/Txt.Label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/screen_admin_grade_entry_thi_cuoi_ky" android:textSize="11sp"/>
+                        <TextView android:id="@+id/ge_w3" style="@style/Txt.Tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <EditText android:id="@+id/ge_fin" style="@style/Txt.Mono" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_field_focus" android:gravity="center" android:hint="@string/screen_admin_grade_entry_0_10" android:inputType="numberDecimal" android:padding="8dp"
+                        android:singleLine="true" android:textColorHint="@color/faint" android:textSize="18sp"/>
+                </LinearLayout>
+                </LinearLayout>
+                <TextView android:id="@+id/ge_preview" style="@style/Txt.Bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:background="@drawable/bg_soft_blue"
+                    android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:textColor="@color/primary"/>
+                <EditText android:id="@+id/et_reason" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+                    android:hint="@string/screen_admin_grade_entry_ly_do_chinh_sua_bat" android:inputType="textMultiLine" android:singleLine="false"/>
+                <TextView android:id="@+id/btn_save" style="@style/Btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/screen_admin_grade_entry_luu_diem"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
